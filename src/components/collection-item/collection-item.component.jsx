@@ -24,7 +24,7 @@ const CollectionItem = ({ item, addItem }) => {
       ></Image>
       <CollectionFooter>
         <Name>{name}</Name>
-        <Price >{price}</Price>
+        <Price>{price}</Price>
       </CollectionFooter>
       <CustomButton onClick={() => addItem(item)} inverted>
         {' '}

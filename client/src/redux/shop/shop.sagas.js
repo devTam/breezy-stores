@@ -7,7 +7,6 @@ import ShopActionTypes from "./shop.types";
 
 
 export function* fetchCollectionsAsync() {
-
     const collectionRef = firestore.collection('collections');
 
     try {
@@ -25,5 +24,5 @@ export function* fetchCollectionsStart() {
 }
 
 export function* shopSagas() {
-    yield all(call(fetchCollectionsStart))
+    yield all([call(fetchCollectionsStart)])
 }
